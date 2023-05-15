@@ -25,7 +25,7 @@ final class EditImageViewController: UIViewController {
         controller = WeScan.EditImageViewController(
             image: captureImage,
             quad: quad,
-            strokeColor: UIColor(red: (69.0 / 255.0), green: (194.0 / 255.0), blue: (177.0 / 255.0), alpha: 1.0).cgColor
+            strokeColor: UIColor.red.withAlphaComponent(0.8).cgColor
         )
         controller.view.frame = editImageView.bounds
         controller.willMove(toParent: self)
