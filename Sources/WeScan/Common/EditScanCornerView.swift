@@ -21,7 +21,7 @@ final class EditScanCornerView: UIView {
     private lazy var circleLayer: CAShapeLayer = {
         let layer = CAShapeLayer()
         layer.fillColor = UIColor.clear.cgColor
-        layer.strokeColor = UIColor.white.cgColor
+        layer.strokeColor = UIColor.red.withAlphaComponent(0.8).cgColor
         layer.lineWidth = 1.0
         return layer
     }()
