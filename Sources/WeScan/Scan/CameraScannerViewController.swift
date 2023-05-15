@@ -38,7 +38,7 @@ public final class CameraScannerViewController: UIViewController {
     private var focusRectangle: FocusRectangleView!
 
     /// The view that draws the detected rectangles.
-    let quadView = QuadrilateralView()
+    private let quadView = QuadrilateralView()
 
     /// Whether flash is enabled
     private var flashEnabled = false
@@ -161,6 +161,13 @@ public final class CameraScannerViewController: UIViewController {
 
     public func toggleAutoScan() {
         isAutoScanEnabled.toggle()
+    }
+    
+    public func setStrokeColor(color: UIColor) {
+        quadView.strokeColor = color.cgColor
+    }
+    public func setFillColor(color: UIColor) {
+        quadView.fillColor = color.cgColor
     }
 }
 
