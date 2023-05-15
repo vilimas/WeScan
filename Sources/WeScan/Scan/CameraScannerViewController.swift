@@ -38,7 +38,7 @@ public final class CameraScannerViewController: UIViewController {
     private var focusRectangle: FocusRectangleView!
 
     /// The view that draws the detected rectangles.
-    public let quadView = QuadrilateralView()
+    let quadView = QuadrilateralView()
 
     /// Whether flash is enabled
     private var flashEnabled = false
