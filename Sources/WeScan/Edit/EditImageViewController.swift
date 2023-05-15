@@ -44,7 +44,6 @@ public final class EditImageViewController: UIViewController {
         let quadView = QuadrilateralView()
         quadView.editable = true
         quadView.strokeColor = strokeColor
-        quadView.fillColor = UIColor.red.withAlphaComponent(0.3).cgColor
         quadView.translatesAutoresizingMaskIntoConstraints = false
         return quadView
     }()
