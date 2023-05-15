@@ -130,7 +130,7 @@ public final class CameraScannerViewController: UIViewController {
         CaptureSession.current.removeFocusRectangleIfNeeded(focusRectangle, animated: false)
 
         focusRectangle = FocusRectangleView(touchPoint: touchPoint)
-        focusRectangle.setBorder(color: UIColor.white.cgColor)
+        focusRectangle.setBorder(color: UIColor.red.withAlphaComponent(0.8).cgColor)
         view.addSubview(focusRectangle)
 
         do {
