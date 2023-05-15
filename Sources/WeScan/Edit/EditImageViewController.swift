@@ -43,7 +43,7 @@ public final class EditImageViewController: UIViewController {
     private lazy var quadView: QuadrilateralView = {
         let quadView = QuadrilateralView()
         quadView.editable = true
-        quadView.strokeColor = strokeColor
+        quadView.strokeColor = UIColor.red.withAlphaComponent(0.8).cgColor//strokeColor
         quadView.translatesAutoresizingMaskIntoConstraints = false
         return quadView
     }()
